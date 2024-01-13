@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Burger Menu</title>
+ </head>
+<body>
+
+  <header>
+    <h1>My Website</h1>
+  </header>
+
+  <nav>
+    <div class="burger-menu" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Your website content goes here -->
+
+  <script>
+    function toggleMenu() {
+      var nav = document.querySelector('nav');
+      nav.classList.toggle('active');
+    }
+  </script>
+ <header>
+  <h1>My Website</h1>
+</header>
+
+<div class="burger-menu" onclick="toggleMenu()">&#9776; Menu</div>
+
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Your website content goes here -->
+
+<script>
+  function toggleMenu() {
+    var nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+  }
+</script>
+</body>
+</html>
+
